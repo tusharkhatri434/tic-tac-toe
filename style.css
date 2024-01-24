@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: gray;
+    
+}
+#tic-title{
+    width: max-content;
+    margin: 2rem auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background: purple;
+}
+#box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: blueviolet;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgb(132, 54, 206);
+}
+
+
+#winner{
+    position: absolute;
+    background: rgb(49, 23, 193);
+    font-size: larger;
+    color: white;
+    opacity: 80%;
+    width: 70vw;
+    height: 82vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#winner button{
+    background: #000;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
