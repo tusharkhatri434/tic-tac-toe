@@ -93,11 +93,22 @@ document.addEventListener('DOMContentLoaded',function (){
 
         return true;
      }
-   
-     resetBtn.addEventListener('click',(e)=>{
-      e.preventDefault();
-      location.reload();
-     })
+
+     function reset() {
+       for (let index = 0; index < 3; index++) {
+         for (let j = 0; j < 3; j++) {
+           valuesInside[index][j] = " ";
+         }
+       }
+     }
+
+     resetBtn.addEventListener("click", (e) => {
+       e.preventDefault();
+       reset();
+       render();
+       userName.innerText = "";
+       winnerID.style.display = "none";
+     });
 
     render();
 });
