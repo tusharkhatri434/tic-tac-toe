@@ -1,3 +1,4 @@
+// This is js file 
 document.addEventListener('DOMContentLoaded',function (){
 
     const board = document.getElementById('game-board');
